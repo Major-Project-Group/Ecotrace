@@ -1,0 +1,85 @@
+interactions:
+- request:
+    body: '{"max_tokens": 100, "messages": [{"role": "user", "content": "Hello World!"}],
+      "model": "claude-3-5-sonnet-20240620"}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      anthropic-version:
+      - '2023-06-01'
+      connection:
+      - keep-alive
+      content-length:
+      - '117'
+      content-type:
+      - application/json
+      host:
+      - api.anthropic.com
+      user-agent:
+      - Anthropic/Python 0.29.0
+      x-stainless-arch:
+      - arm64
+      x-stainless-async:
+      - 'false'
+      x-stainless-lang:
+      - python
+      x-stainless-os:
+      - MacOS
+      x-stainless-package-version:
+      - 0.29.0
+      x-stainless-runtime:
+      - CPython
+      x-stainless-runtime-version:
+      - 3.11.8
+    method: POST
+    uri: https://api.anthropic.com/v1/messages
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA0yQXUvDUAyG/0rMzW7a0X04sTfeiGx4KW6ISDm22XboabI1Ocw69t+ldYJXgSfv
+        8wZyRl9hjo3uimyyudvMH2d3C9bN+v779bSO3cvbMyZo3YH6FKm6HWGCrYQeOFWv5tgwwUYqCphj
+        GVysKJ2lt6kKM1k6zabzbDHNMMFS2IgN8/fzX6nRV68PI8clhSA3sLKRAvuSwAQaIoNO4hiWcoLS
+        Mazg93JPwaRy3QM8EQXYtjQoTmtoCBx3cIyk5oUVpIVA1vOa5QR+C7anlkba52zvedf3jSoIvh5a
+        Kq9l1KvoWgb3KdHGePlIUE0ORUtOhTFH4qqw2DJeF0rHSFwS5hxDSDAOf8vP6PkQrTCpiRXzSZag
+        RPuP5rPL5QcAAP//AwASGTzqlQEAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 896c7b42aad666ce-AMS
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Jun 2024 14:34:46 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      anthropic-ratelimit-requests-limit:
+      - '5'
+      anthropic-ratelimit-requests-remaining:
+      - '4'
+      anthropic-ratelimit-requests-reset:
+      - '2024-06-20T14:35:43Z'
+      anthropic-ratelimit-tokens-limit:
+      - '20000'
+      anthropic-ratelimit-tokens-remaining:
+      - '20000'
+      anthropic-ratelimit-tokens-reset:
+      - '2024-06-20T14:35:43Z'
+      request-id:
+      - req_01SmACUx6QLvmd5BaVxLK4Eo
+      via:
+      - 1.1 google
+      x-cloud-trace-context:
+      - 5c9beda97b0e29c3071ac01662ca63e1
+    status:
+      code: 200
+      message: OK
+version: 1
