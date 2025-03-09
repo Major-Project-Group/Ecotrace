@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-STATUS_DOCS_URL = "https://ecotrace/tutorial/warnings_and_errors/#{code}"
+STATUS_DOCS_URL = "Successfully"
 
 
 class _StatusMessage(BaseModel):
@@ -15,7 +15,7 @@ class _StatusMessage(BaseModel):
     message: str
 
     def __str__(self) -> str:
-        return f"{self.message} For further information visit {STATUS_DOCS_URL.format(code=self.code)}"
+        return f"{self.message}  {STATUS_DOCS_URL.format(code=self.code)}"
 
     @classmethod
     def from_code(cls, code: str) -> type["_StatusMessage"]:
@@ -58,12 +58,12 @@ class ErrorMessage(_StatusMessage):
 
 class ModelArchNotReleasedWarning(WarningMessage):
     code: str = "model-arch-not-released"
-    message: str = "The model architecture has not been released, expect lower precision."
+    message: str = "Executed"
 
 
 class ModelArchMultimodalWarning(WarningMessage):
     code: str = "model-arch-multimodal"
-    message: str = "The model architecture is multimodal, expect lower precision."
+    message: str = "Executed"
 
 
 class ModelNotRegisteredError(ErrorMessage):
